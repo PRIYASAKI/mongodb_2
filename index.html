@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MongoDB Operations</title>
+</head>
+<body>
+  <h1>MongoDB Operations</h1>
+  <form action="/insert" method="post">
+    <h2>Insert</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" required><br>
+    <button type="submit">Insert</button>
+  </form>
+
+  <form action="/delete" method="post">
+    <h2>Delete</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <button type="submit">Delete</button>
+  </form>
+
+  <form action="/update" method="post">
+    <h2>Update</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="newName">New Name:</label>
+    <input type="text" id="newName" name="newName" required><br>
+    <label for="newDescription">New Description:</label>
+    <input type="text" id="newDescription" name="newDescription" required><br>
+    <button type="submit">Update</button>
+  </form>
+
+  <form action="/search" method="get">
+    <h2>Search</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <button type="submit">Search</button>
+  </form>
+
+  <a href="/report">Generate Report</a>
+</body>
+</html>
